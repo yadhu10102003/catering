@@ -3,12 +3,12 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './frontend/Home'
-import Login from './components/Login'
-import Navbar from './components/Navbar'
+import Login from './frontend/Login'
+import Navbar from './frontend/Navbar'
 import { Route, Routes } from 'react-router-dom'
-import Register from './components/Register'
-import Products from './components/Products'
-import Aboutus from './components/Aboutus'
+import Register from './frontend/Register'
+import Products from './frontend/Products'
+import Aboutus from './frontend/Aboutus'
 
 function App() {
   // const [count, setCount] = useState(0)

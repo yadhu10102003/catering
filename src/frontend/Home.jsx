@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
     return (
-        <div style={{ marginTop: '150px' }}>
+        <div >
             <div className='Banner'>
                 <h1>Silver Spoon Catering</h1>
             </div>
