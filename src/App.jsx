@@ -7,6 +7,7 @@ import Login from './components/Login'
 import Navbar from './components/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Register from './components/Register'
+import Products from './components/Products'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -19,7 +20,7 @@ function App() {
         <Route path='/' element={<Home/>}></Route>
         <Route path='/log' element={<Login/>}></Route>
         <Route path='/reg' element={<Register/>}></Route>
-        <Route path='/prod'></Route>
+        <Route path='/prod' element={<Products/>} ></Route>
         
       </Routes>
     </>

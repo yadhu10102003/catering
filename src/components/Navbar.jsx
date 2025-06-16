@@ -23,7 +23,7 @@ const Navbar = () => {
             placeholder="Search..."
             value={search}
             onChange={handleSearch}
-            sx={{ backgroundColor: 'white', borderRadius: 1, marginX: 2 }}
+            sx={{ backgroundColor: 'white', borderRadius: 1, marginX: 1 }}
           />
           &nbsp;&nbsp;&nbsp;&nbsp;
           <Button variant='contained' color='secondary' onClick={() => navigate('/log')}>
@@ -33,6 +33,8 @@ const Navbar = () => {
           <Button variant='contained' color='secondary' onClick={() => navigate('/prod')}>
             &nbsp;Products&nbsp;
           </Button>
+
+          
         </Toolbar>
       </AppBar>
     </div>
