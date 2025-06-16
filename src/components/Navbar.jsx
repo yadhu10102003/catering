@@ -1,19 +1,42 @@
-import { AppBar, Toolbar,Button } from '@mui/material'
-import React from 'react'
+import { AppBar, Toolbar, Button, TextField } from '@mui/material'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
-    return (
-        <div>
-            <AppBar>
-                <Toolbar>
-                    <h2>Silver Spoon Catering</h2>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <Button variant='contained' color='secondary' href='./log'>&nbsp;Register&nbsp;/&nbsp;Login&nbsp;</Button>
-                    
-                </Toolbar>
-            </AppBar>
-        </div>
-    )
+  const navigate = useNavigate()
+  const [search, setSearch] = useState('')
+
+  const handleSearch = (e) => {
+    setSearch(e.target.value)
+    console.log("Search:", e.target.value)
+  }
+
+  return (
+    <div>
+      <AppBar position="static">
+        <Toolbar>
+          <h2>Silver Spoon Catering</h2>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <TextField
+            variant="outlined"
+            size="small"
+            placeholder="Search..."
+            value={search}
+            onChange={handleSearch}
+            sx={{ backgroundColor: 'white', borderRadius: 1, marginX: 2 }}
+          />
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <Button variant='contained' color='secondary' onClick={() => navigate('/log')}>
+            &nbsp;Register&nbsp;/&nbsp;Login&nbsp;
+          </Button>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <Button variant='contained' color='secondary' onClick={() => navigate('/prod')}>
+            &nbsp;Products&nbsp;
+          </Button>
+        </Toolbar>
+      </AppBar>
+    </div>
+  )
 }
 
 export default Navbar
