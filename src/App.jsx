@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Register from './components/Register'
 import Products from './components/Products'
+import Aboutus from './components/Aboutus'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
         <Route path='/log' element={<Login/>}></Route>
         <Route path='/reg' element={<Register/>}></Route>
         <Route path='/prod' element={<Products/>} ></Route>
+        <Route path='/abt' element={<Aboutus/>} ></Route>
         
       </Routes>
     </>
