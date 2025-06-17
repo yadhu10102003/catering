@@ -56,7 +56,7 @@ const Products = () => {
     };
 
     return (
-        <Box sx={{ flexGrow: 1, p: 3, pt: 10, backgroundColor: '#f5f5f5', minHeight: '100vh' }}>
+        <Box sx={{ flexGrow: 1, p: 3, pt: 10, backgroundColor: 'inherit', minHeight: '100vh' }}>
             {cart.length > 0 && (
                 <Paper
                     elevation={4}
@@ -88,7 +88,7 @@ const Products = () => {
                                 title={val.title}
                             />
                             <CardContent>
-                                <Typography gutterBottom variant="h6" component="div" color="primary">
+                                <Typography gutterBottom variant="h6" component="div" color="Black">
                                     Hotel: {val.title.substring(0, 20)}...
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary" sx={{ mb: 1.5 }}>

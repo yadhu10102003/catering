@@ -44,7 +44,7 @@ const Navbar = () => {
                         value={search}
                         onChange={handleSearch}
                         sx={{
-                            backgroundColor: 'GrayText',
+                            backgroundColor: 'white',
                             width:"200px",
                             borderRadius: 1,
                             '& .MuiOutlinedInput-root': {

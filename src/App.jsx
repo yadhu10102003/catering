@@ -9,6 +9,7 @@ import { Route, Routes } from 'react-router-dom'
 import Register from './frontend/Register'
 import Products from './frontend/Products'
 import Aboutus from './frontend/Aboutus'
+import Footer from './frontend/Footer'
 import Cart from './frontend/Cart'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         {/* <Route path='/cart' element={<Cart/>} ></Route> */}
         
       </Routes>
+      <Footer></Footer>
     </>
   )
 }
