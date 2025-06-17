@@ -104,7 +104,6 @@ const Products = () => {
                                     <Button size="small" variant="outlined" onClick={() => shareItem(val.title, val.image)}>
                                         <ShareIcon fontSize="small" />
                                     </Button>
-                                    <Button size="small" variant="outlined">View Menu</Button>
                                 </Stack>
                                 <Fab size="small" color="secondary" aria-label="add" sx={{ boxShadow: 2 }} onClick={() => addToCart(val)}>
                                     <AddIcon />
