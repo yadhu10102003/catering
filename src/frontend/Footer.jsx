@@ -2,7 +2,7 @@ import { Box, Typography, Grid } from '@mui/material'
 
 const Footer = () => {
   return (
-    <div style={{ width: '100%' }}>
+    <div style={{ width: '100%'}}>
       <Box sx={{
         width: '100%',
         backgroundColor: 'transparent',
