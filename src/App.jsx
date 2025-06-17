@@ -9,13 +9,14 @@ import { Route, Routes } from 'react-router-dom'
 import Register from './frontend/Register'
 import Products from './frontend/Products'
 import Aboutus from './frontend/Aboutus'
+import Footer from './frontend/Footer'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      {/* <Home></Home> */}
+    <div style={{paddingBottom:"50px"}}>
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
@@ -23,8 +24,12 @@ function App() {
         <Route path='/reg' element={<Register/>}></Route>
         <Route path='/prod' element={<Products/>} ></Route>
         <Route path='/abt' element={<Aboutus/>} ></Route>
-        
       </Routes>
+    </div>
+    <div style={{paddingTop:"50px"}}> 
+        <Footer></Footer>
+    </div>
+      
     </>
   )
 }

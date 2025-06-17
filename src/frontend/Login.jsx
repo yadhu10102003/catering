@@ -4,13 +4,13 @@ import React from 'react'
 const Login = () => {
   return (
     <div>
-      < div className='dis'>
+      < div className='disin'>
         <h1>Sign in</h1>
         <div className='tf'>
           <TextField
             variant="outlined"
             size="small"
-            label="Name"
+            label="Email-id"
             sx={{
               backgroundColor: 'GrayText', borderRadius: 1, '&:focus-within': {
                 backgroundColor: 'white',

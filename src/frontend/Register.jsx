@@ -4,7 +4,7 @@ import { TextField, Button } from '@mui/material'
 const Register = () => {
   return (
     <div>
-      < div className='dis'>
+      < div className='disup'>
         <h1>Sign Up</h1>
         <div className='tf'>
           <TextField
@@ -19,13 +19,37 @@ const Register = () => {
             required
           />
         </div>
-
-        <br />
+        <div className='tf'>
+          <TextField
+            variant="outlined"
+            size="small"
+            label="Email-id"
+            sx={{
+              backgroundColor: 'GrayText', borderRadius: 1, '&:focus-within': {
+                backgroundColor: 'white',
+              }
+            }}
+            required
+          />
+        </div>
         <div className='tf'>
           <TextField
             variant="outlined"
             size="small"
             label="Password"
+            sx={{
+              backgroundColor: 'GrayText', borderRadius: 1, '&:focus-within': {
+                backgroundColor: 'white',
+              }
+            }}
+            required
+          />
+        </div>
+        <div className='tf'>
+          <TextField
+            variant="outlined"
+            size="small"
+            label="Re-enter Password"
             sx={{
               backgroundColor: 'GrayText', borderRadius: 1, '&:focus-within': {
                 backgroundColor: 'white',

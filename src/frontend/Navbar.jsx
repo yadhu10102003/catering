@@ -1,6 +1,7 @@
-import { AppBar, Toolbar, Button, TextField, Box } from '@mui/material'
+import { AppBar, Toolbar, Button, TextField, Box, InputAdornment } from '@mui/material'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import SearchIcon from '@mui/icons-material/Search';
 
 const Navbar = () => {
     const navigate = useNavigate()
@@ -9,7 +10,7 @@ const Navbar = () => {
     const handleSearch = (e) => {
         setSearch(e.target.value)
         console.log("Search:", e.target.value)
-        
+
     }
 
     return (
@@ -34,16 +35,31 @@ const Navbar = () => {
                         &nbsp;About us&nbsp;
                     </Button>
                     &nbsp;&nbsp;&nbsp;
-                    
 
-                    <TextField 
+
+                    <TextField
                         variant="outlined"
                         size="small"
-                        placeholder="Search..."
+                        placeholder="Search"
                         value={search}
                         onChange={handleSearch}
-                        sx={{ backgroundColor: 'GrayText', borderRadius: 1, '&:focus-within': {
-                                backgroundColor: 'white', }}}
+                        sx={{
+                            backgroundColor: 'GrayText',
+                            width:"200px",
+                            borderRadius: 1,
+                            '& .MuiOutlinedInput-root': {
+                                '&.Mui-focused': {
+                                    backgroundColor: 'white',
+                                },
+                            },
+                        }}
+                        InputProps={{
+                            endAdornment: (
+                                <InputAdornment position="end">
+                                    <SearchIcon />
+                                </InputAdornment>
+                            ),
+                        }}
                     />
                 </Toolbar>
             </AppBar>
