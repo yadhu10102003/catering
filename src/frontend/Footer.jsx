@@ -1,29 +1,25 @@
-import { Padding } from '@mui/icons-material'
-import { Box, Typography, Grid, Link } from '@mui/material'
+import { Box, Typography, Grid } from '@mui/material'
 
 const Footer = () => {
   return (
-    <div style={{paddingTop:"50px"}}>
+    <div style={{ width: '100%' }}>
       <Box sx={{
-        position: 'fixed',
-        bottom: 0,
-        left: 0,
         width: '100%',
-        backgroundColor:'transparent',
+        backgroundColor: 'transparent',
         color: '#fff',
         textAlign: 'center',
-        py: 2,
-        zIndex: 4000000,
-      }} >
+        py: 8,
+        px: 2,
+        mt: 4,
+        justifyContent: 'center',
+        
+      }}>
         <Grid
           container
           spacing={4}
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            textAlign: 'center',
-          }}
+          justifyContent="center"
+          alignItems="center"
+          textAlign="center"
         >
           <Grid item xs={12} sm={4}>
             <Typography variant="h6" gutterBottom>
@@ -44,17 +40,11 @@ const Footer = () => {
           </Grid>
         </Grid>
 
-
-        <div>
-          <Typography variant="body2" align="center" sx={{ mt: 4, fontSize: '0.85rem' }}>
-            © 2025 Silver Spoon Catering. All rights reserved.
-          </Typography>
-        </div>
-
+        <Typography variant="body2" align="center" sx={{ mt: 4, fontSize: '0.85rem' }}>
+          © 2025 Silver Spoon Catering. All rights reserved.
+        </Typography>
       </Box>
     </div>
-
-
   )
 }
 

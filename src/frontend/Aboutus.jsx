@@ -3,7 +3,7 @@ import React from 'react'
 const Aboutus = () => {
     return (
         <div>
-            <h1 style={{marginTop:"100px"}} className='Banner'>About us</h1>
+            <h1 style={{marginTop:"40px"}} className='Banner'>About us</h1>
             <h3 style={{marginLeft:"20px"}} className='Banner'><b>Welcome to Silver Spoon Catering &nbsp; </b> - where taste meets elegance!</h3>
             <p className='abt'>""We specialize in offering top-quality catering services for all your special occasions  weddings, parties, corporate events, and more. With a wide variety of delicious dishes, professional service, and timely delivery, we ensure your events are truly memorable.""</p>
 

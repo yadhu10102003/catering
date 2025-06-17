@@ -66,7 +66,7 @@ const Products = () => {
                         right: 16,
                         px: 3,
                         py: 1,
-                        bgcolor: '#fff',
+                        bgcolor: 'grey',
                         zIndex: 1000,
                         borderRadius: 2,
                         fontWeight: 600,
@@ -81,7 +81,7 @@ const Products = () => {
             <Grid container spacing={4} justifyContent="center">
                 {prod.map((val, index) => (
                     <Grid item key={index}>
-                        <Card sx={{ maxWidth: 320, minHeight: 440, position: 'relative', borderRadius: 4, boxShadow: 6 }}>
+                        <Card sx={{ maxWidth: 320, minHeight: 440, position: 'relative', borderRadius: 4, boxShadow: 6 ,backgroundColor:'white'}}>
                             <CardMedia
                                 sx={{ height: 180, objectFit: 'contain', p: 2 }}
                                 image={val.image}

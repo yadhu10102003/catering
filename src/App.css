@@ -42,4 +42,21 @@
   color: #888;
 } 
 
+/* ///////////////////////// */
 
+/* body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.main-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px; /* Adjust based on Navbar height 
+}
+
+.page-content {
+  flex: 1;
+} */
