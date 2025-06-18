@@ -96,7 +96,7 @@ const Products = () => {
                             </CardContent>
 
                             <CardActions sx={{ justifyContent: 'space-between', px: 2 }}>
-                                <div style={{marginLeft:"125px"}}>
+                                <div className='Add-cart-but' style={{marginLeft:"125px"}}>
                                     <Fab size="small" color="success" aria-label="add" sx={{ boxShadow: 2 }} onClick={() => addToCart(val)}>
                                         <AddIcon />
                                     </Fab>

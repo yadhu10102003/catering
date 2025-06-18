@@ -17,8 +17,10 @@ const Navbar = () => {
         <div>
             <AppBar color='transparent' >
                 <Toolbar>
-                    <h2>Silver Spoon Catering</h2>
-                    <Box sx={{ flexGrow: 1 }} />
+                    <div className='Nav-head'>
+                        <h2><span>Silver Spoon</span> Catering</h2>
+                    </div>
+                    <Box sx={{ flexGrow: 1}} />
                     <Button variant='outlined' color='white' onClick={() => navigate('/')}>
                         &nbsp;Home&nbsp;
                     </Button>

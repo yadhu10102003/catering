@@ -47,10 +47,28 @@ const Home = () => {
             <div style={{ width: "100%", height: "100px" }}></div>
 
             <div className='service'>
-                <h1>Our Services</h1><br />
+                {/* <h1>Our Services</h1><br /> */}
+                <div style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "70px"
+                }}>
+                    <hr style={{ width: "60px", borderTop: "2px solid crimson", marginRight: "10px" }} />
+                    <h3 style={{
+                        color: "white",
+                        fontWeight: "bold",
+                        margin: "0",
+                        fontSize: "50px"
+                    }}>
+                        Our Services
+                    </h3>
+                    <hr style={{ width: "60px", borderTop: "2px solid crimson", marginLeft: "10px" }} />
+
+                </div>
                 <Grid sx={{ marginLeft: "50px" }} container spacing={4}>
                     <Grid size={{ xs: 6, md: 4 }}>
-                        <Card sx={{ maxWidth: 345, backgroundColor: "#1E1E2F", color: "#FFD700" }}>
+                        <Card sx={{ maxWidth: 345, backgroundColor: "#0A0A23", color: "#FFD700", border: "2px solid crimson", borderRadius: "10px"}}>
                             <CardActionArea>
                                 <CardMedia component="img" height="200" image="https://img.freepik.com/free-photo/elegant-wedding-table-setting-with-floral-centerpiece-candles_23-2151978920.jpg" alt="Wedding pic" />
                                 <CardContent>
@@ -62,7 +80,7 @@ const Home = () => {
                     </Grid>
 
                     <Grid size={{ xs: 6, md: 4 }}>
-                        <Card sx={{ maxWidth: 345, backgroundColor: "#1E1E2F", color: "#FFD700" }}>
+                        <Card sx={{ maxWidth: 345, backgroundColor: "#0A0A23", color: "#FFD700", border: "2px solid crimson", borderRadius: "10px" }}>
                             <CardActionArea>
                                 <CardMedia component="img" height="200" image="https://img.freepik.com/free-photo/boxing-day-celebration-with-balloons_23-2151013721.jpg" alt="Birthday pic" />
                                 <CardContent>
@@ -74,7 +92,7 @@ const Home = () => {
                     </Grid>
 
                     <Grid size={{ xs: 6, md: 4 }}>
-                        <Card sx={{ maxWidth: 345, backgroundColor: "#1E1E2F", color: "#FFD700" }}>
+                        <Card sx={{ maxWidth: 345, backgroundColor: "#0A0A23", color: "#FFD700", border: "2px solid crimson", borderRadius: "10px" }}>
                             <CardActionArea>
                                 <CardMedia component="img" height="200" image="https://img.freepik.com/free-photo/graduation-celebration-success-achievement-learning-combined-generated-by-ai_188544-24685.jpg" alt="Convocation pic" />
                                 <CardContent>
@@ -86,7 +104,7 @@ const Home = () => {
                     </Grid>
 
                     <Grid size={{ xs: 6, md: 4 }}>
-                        <Card sx={{ maxWidth: 345, backgroundColor: "#1E1E2F", color: "#FFD700" }}>
+                        <Card sx={{ maxWidth: 345, backgroundColor: "#0A0A23", color: "#FFD700", border: "2px solid crimson", borderRadius: "10px" }}>
                             <CardActionArea>
                                 <CardMedia component="img" height="200" image="https://img.freepik.com/free-photo/navratri-decoration-with-candles_23-2151193769.jpg" alt="Anniversary pic" />
                                 <CardContent>
@@ -98,7 +116,7 @@ const Home = () => {
                     </Grid>
 
                     <Grid size={{ xs: 6, md: 4 }}>
-                        <Card sx={{ maxWidth: 345, backgroundColor: "#1E1E2F", color: "#FFD700" }}>
+                        <Card sx={{ maxWidth: 345, backgroundColor: "#0A0A23", color: "#FFD700" , border: "2px solid crimson", borderRadius: "10px"}}>
                             <CardActionArea>
                                 <CardMedia component="img" height="200" image="https://img.freepik.com/free-photo/cinematic-happy-people-celebrating-american-independence-day-holiday_23-2151479257.jpg" alt="Reunion pic" />
                                 <CardContent>
@@ -110,7 +128,7 @@ const Home = () => {
                     </Grid>
 
                     <Grid size={{ xs: 6, md: 4 }}>
-                        <Card sx={{ maxWidth: 345, backgroundColor: "#1E1E2F", color: "#FFD700" }}>
+                        <Card sx={{ maxWidth: 345, backgroundColor: "#0A0A23", color: "#FFD700", border: "2px solid crimson", borderRadius: "10px" }}>
                             <CardActionArea>
                                 <CardMedia component="img" height="200" image="https://img.freepik.com/free-photo/glowing-lanterns-festive-night-scene_23-2151983965.jpg" alt="Festival pic" />
                                 <CardContent>

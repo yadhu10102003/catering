@@ -60,6 +60,10 @@ button {
 
 button:hover {
   border-color: #646cff;
+  color: red;
+  transition: .6s;
+  transform: scale(1.1);
+  font-weight: 100;
 }
 
 button:focus,
@@ -89,7 +93,29 @@ button:focus-visible {
   margin-left: 10px;
   padding-top: 30px;
   /* margin-bottom: 50px; */
+}
 
+.Nav-head {
+  color: white;
+}
+
+.Nav-head span {
+  color: gold;
+}
+
+/* When hovering .Nav-head OR the span inside it */
+.Nav-head:hover,
+.Nav-head:hover span,
+.Nav-head span:hover,
+.Nav-head span:hover ~ * {
+  color: gold;
+  transition: .7s;
+}
+
+.Nav-head:hover span,
+.Nav-head span:hover {
+  color: white;
+  transition: .7s;
 }
 
 .desc {
@@ -119,9 +145,13 @@ button:focus-visible {
   width: 400px;
   margin-top: 100px;
   margin-left: 30px;
-  
-
 }
+
+.disup button:hover{
+  color: white;
+  transform: scale(1.06);
+}
+
 
 .disin {
   border: 2px;
@@ -132,7 +162,11 @@ button:focus-visible {
   width: 300px;
   margin-top: 120px;
   margin-left: 70px;
-  
+}
+
+.disin button:hover{
+  color: white;
+  transform: scale(1.06);
 }
 
 .tf {
@@ -166,4 +200,12 @@ button:focus-visible {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+/* ////////// */
+
+.Add-cart-but button:hover{
+  color: white;
+  transition: .3s;
 }
