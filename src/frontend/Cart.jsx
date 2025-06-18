@@ -3,6 +3,7 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
+import RemoveIcon from '@mui/icons-material/Remove';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 
@@ -49,7 +50,7 @@ const Cart = ({ cart, setCart, total, setTotal }) => {
                             {item.title.substring(0, 20)}... × {item.qty}
                         </Typography>
                         <IconButton size="small" onClick={() => removeItem(item.id)}>
-                            <CloseIcon fontSize="small" />
+                            <RemoveIcon fontSize="small" />
                         </IconButton>
                     </Box>
                     <Divider />

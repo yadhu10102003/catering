@@ -81,33 +81,31 @@ const Products = () => {
             <Grid container spacing={4} justifyContent="center">
                 {prod.map((val, index) => (
                     <Grid item key={index}>
-                        <Card sx={{ maxWidth: 320, minHeight: 440, position: 'relative', borderRadius: 4, boxShadow: 6 ,backgroundColor:'white'}}>
+                        <Card sx={{ maxWidth: 320, minHeight: 440, position: 'relative', borderRadius: 4, boxShadow: 6, backgroundColor: 'AppWorkspace' }}>
                             <CardMedia
                                 sx={{ height: 180, objectFit: 'contain', p: 2 }}
                                 image={val.image}
                                 title={val.title}
                             />
                             <CardContent>
-                                <Typography gutterBottom variant="h6" component="div" color="Black">
+                                <Typography gutterBottom variant="h6" component="div" color="White">
                                     Hotel: {val.title.substring(0, 20)}...
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary" sx={{ mb: 1.5 }}>
+                                <Typography variant="body2" color="White" sx={{ mb: 1.5 }}>
                                     {val.description.substring(0, 100)}...
                                 </Typography>
-                                <Typography variant="body2" sx={{ fontWeight: 500 }}>
-                                    Specialty: ₹{val.price} per dish
+                                <Typography variant="body2" color="White" sx={{ fontWeight: 500 }}>
+                                     ₹{val.price} per no.
                                 </Typography>
                             </CardContent>
 
                             <CardActions sx={{ justifyContent: 'space-between', px: 2 }}>
-                                <Stack direction="row" spacing={1}>
-                                    <Button size="small" variant="outlined" onClick={() => shareItem(val.title, val.image)}>
-                                        <ShareIcon fontSize="small" />
-                                    </Button>
-                                </Stack>
-                                <Fab size="small" color="secondary" aria-label="add" sx={{ boxShadow: 2 }} onClick={() => addToCart(val)}>
-                                    <AddIcon />
-                                </Fab>
+                                <div style={{marginLeft:"125px"}}>
+                                    <Fab size="small" color="success" aria-label="add" sx={{ boxShadow: 2 }} onClick={() => addToCart(val)}>
+                                        <AddIcon />
+                                    </Fab>
+                                </div>
+
                             </CardActions>
                         </Card>
                     </Grid>
