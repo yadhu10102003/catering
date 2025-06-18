@@ -50,10 +50,6 @@ const Products = () => {
         setTotal(newTotal);
     };
 
-    const shareItem = (title, url) => {
-        navigator.clipboard.writeText(`${title} - ${url}`);
-        alert("Link copied to clipboard!");
-    };
 
     return (
         <Box sx={{ flexGrow: 1, p: 3, pt: 10, backgroundColor: 'inherit', minHeight: '100vh' }}>

@@ -9,11 +9,7 @@ import Divider from '@mui/material/Divider';
 
 const Cart = ({ cart, setCart, total, setTotal }) => {
     // Count quantities of each item
-    const cartMap = {};
-    cart.forEach(item => {
-        cartMap[item.id] = cartMap[item.id] ? { ...cartMap[item.id], qty: cartMap[item.id].qty + 1 } : { ...item, qty: 1 };
-    });
-    const items = Object.values(cartMap);
+    const items = cart;
 
     const removeItem = (id) => {
     const updatedCart = cart.map(item => {
