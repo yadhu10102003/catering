@@ -8,13 +8,14 @@ const Aboutus = () => {
             <p className='abt'>""We specialize in offering top-quality catering services for all your special occasions  weddings, parties, corporate events, and more. With a wide variety of delicious dishes, professional service, and timely delivery, we ensure your events are truly memorable.""</p>
 
             <div className='abt' style={{paddingBottom:"20px"}}>
-                <p>At Silver Spoon, we believe that great food brings people together. Our easy-to-use website lets you:
-                    <ul>
-                        <li >Explore our menu and services</li>
-                        <li>Make inquiries or bookings</li>
-                        <li>Stay updated with our latest offerings</li>
-                    </ul>
-                </p>
+                <p>At Silver Spoon, we believe that great food brings people together. Our easy-to-use website lets you:</p>
+    
+                
+            </div>
+            <div >
+                <p>Explore our menu and services </p>
+                <p>Make inquiries or bookings </p>
+                <p>Stay updated with our latest offerings</p>
             </div>
 
         </div>

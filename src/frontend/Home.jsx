@@ -3,7 +3,8 @@ import React from 'react'
 const Home = () => {
     return (
         <div >
-            <div className='Banner'>
+            <div className='Banner' style={{marginTop:"50px"
+            }}>
                 <h1>Silver Spoon Catering</h1>
             </div>
             <div className='Banner'>
