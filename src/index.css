@@ -60,7 +60,7 @@ button {
 
 button:hover {
   border-color: #646cff;
-  color: red;
+  color: white;
   transition: .6s;
   transform: scale(1.1);
   font-weight: 100;
@@ -99,18 +99,16 @@ button:focus-visible {
   color: white;
 }
 
-.Nav-head span {
-  color: gold;
-}
+
 
 /* When hovering .Nav-head OR the span inside it */
-.Nav-head:hover,
+/* .Nav-head:hover,
 .Nav-head:hover span,
 .Nav-head span:hover,
 .Nav-head span:hover ~ * {
   color: gold;
   transition: .7s;
-}
+} */
 
 .Nav-head:hover span,
 .Nav-head span:hover {
