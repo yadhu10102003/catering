@@ -207,3 +207,24 @@ button:focus-visible {
   color: white;
   transition: .3s;
 }
+
+/* .pay{
+  width: 800px;
+  height: 600px;
+  background-color: whitesmoke;
+  border: #1a1a1a solid;
+  border: 2px;
+  border-radius: 8%;padding-top: 100px;
+} */
+.inner-pay{
+  z-index: 10000;
+  width: 500px;
+  height: 80%;
+  border: 2px;
+  background-color:whitesmoke;
+  border-color: rgb(141, 129, 129) ;
+  border-style: solid;
+  border-radius: 15%;
+
+  
+}

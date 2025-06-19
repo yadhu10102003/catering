@@ -6,23 +6,31 @@ import CloseIcon from '@mui/icons-material/Close';
 import RemoveIcon from '@mui/icons-material/Remove';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
+import { useNavigate } from 'react-router-dom'
+import Button from '@mui/material/Button';
 
 const Cart = ({ cart, setCart, total, setTotal }) => {
     // Count quantities of each item
     const items = cart;
+    const navigate = useNavigate()
+
+    const n = (t, cart) => {
+        navigate('/pay', { state: { t, cart } });
+    };
+
 
     const removeItem = (id) => {
-    const updatedCart = cart.map(item => {
-        if (item.id === id) {
-            return { ...item, qty: item.qty - 1 };
-        }
-        return item;
-    }).filter(item => item.qty > 0);
+        const updatedCart = cart.map(item => {
+            if (item.id === id) {
+                return { ...item, qty: item.qty - 1 };
+            }
+            return item;
+        }).filter(item => item.qty > 0);
 
-    setCart(updatedCart);
-    const newTotal = updatedCart.reduce((acc, item) => acc + item.price * item.qty, 0);
-    setTotal(newTotal);
-};
+        setCart(updatedCart);
+        const newTotal = updatedCart.reduce((acc, item) => acc + item.price * item.qty, 0);
+        setTotal(newTotal);
+    };
 
 
     return (
@@ -55,6 +63,15 @@ const Cart = ({ cart, setCart, total, setTotal }) => {
             <Typography sx={{ mt: 2, fontWeight: 600 }}>
                 Total: ₹{total.toFixed(2)}
             </Typography>
+            <Button
+                variant="contained"
+                color="success"
+                style={{ color: "white" }}
+                onClick={() => n(total, cart)}
+            >
+                Proceed to pay
+            </Button>
+
         </Paper>
     );
 };

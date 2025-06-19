@@ -11,6 +11,7 @@ import Products from './frontend/Products'
 import Aboutus from './frontend/Aboutus'
 import Footer from './frontend/Footer'
 import Cart from './frontend/Cart'
+import Payment from './frontend/PAyment'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -26,6 +27,7 @@ function App() {
         <Route path='/reg' element={<Register />} />
         <Route path='/prod' element={<Products />} />
         <Route path='/abt' element={<Aboutus />} />
+        <Route path='/pay' element={<Payment></Payment>}></Route>
       </Routes>
     <Footer />
 </>
