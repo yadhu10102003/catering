@@ -267,3 +267,8 @@ button:focus-visible {
   color: #ffe082 !important;
   border-color: #ffe082 !important;
 }
+
+.logimg{
+  width: fit-content;
+  height: fit-content;
+}
