@@ -74,7 +74,7 @@ const Navbar = () => {
                     </Button>
                     &nbsp;&nbsp;&nbsp;
 
-                    <TextField
+                    {/* <TextField
                         variant="outlined"
                         size="small"
                         placeholder="Search"
@@ -97,7 +97,7 @@ const Navbar = () => {
                                 </InputAdornment>
                             ),
                         }}
-                    />
+                    /> */}
                 </Toolbar>
             </AppBar>
             <div style={{ height: 64 }} /> {/* Spacer for fixed navbar */}

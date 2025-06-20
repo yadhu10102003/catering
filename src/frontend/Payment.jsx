@@ -1,12 +1,13 @@
 import { Button, Card, CardContent, Typography, Divider, Box, List, ListItem, ListItemText, ListItemIcon } from '@mui/material';
 import React, { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 
 const Payment = () => {
     const location = useLocation();
     const { t, cart } = location.state;
+    const navigate = useNavigate();
 
     useEffect(() => {
         // For debug
@@ -55,7 +56,9 @@ const Payment = () => {
                             </Typography>
                         </Box>
                     </Box>
-                    <Button fullWidth size="large" variant="contained" color="success" sx={{ borderRadius: 2, fontWeight: 700, fontSize: '1.1rem', py: 1.2, mt: 2, boxShadow: 3 }}>
+                    <Button fullWidth size="large" variant="contained" color="success" sx={{ borderRadius: 2, fontWeight: 700, fontSize: '1.1rem', py: 1.2, mt: 2, boxShadow: 3 }}
+                        onClick={() => navigate('/payment-success')}
+                    >
                         Pay Now
                     </Button>
                 </CardContent>
