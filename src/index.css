@@ -228,3 +228,42 @@ button:focus-visible {
 
   
 }
+
+/* Navbar background and button styles */
+.navbar-translucent {
+  background: rgba(20, 20, 20, 0.45) !important;
+  backdrop-filter: blur(8px);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.navbar-solid {
+  background: rgba(20, 20, 20, 0.85) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.nav-btn-translucent {
+  color: #fff !important;
+  border-color: #fff !important;
+  background: rgba(40,40,40,0.15) !important;
+  transition: color 0.3s, background 0.3s, border-color 0.3s;
+}
+
+.nav-btn-translucent:hover {
+  background: rgba(40,40,40,0.35) !important;
+  color: #ffe082 !important;
+  border-color: #ffe082 !important;
+}
+
+.nav-btn-solid {
+  color: #fff !important;
+  background: rgba(40,40,40,0.95) !important;
+  border-color: #fff !important;
+  transition: color 0.3s, background 0.3s, border-color 0.3s;
+}
+
+.nav-btn-solid:hover {
+  background: #222 !important;
+  color: #ffe082 !important;
+  border-color: #ffe082 !important;
+}
